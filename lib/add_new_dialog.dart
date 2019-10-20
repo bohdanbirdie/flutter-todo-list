@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AddNewDialog extends StatefulWidget {
   final ValueChanged<String> onSave;
 
-  AddNewDialog({ @required this.onSave });
+  AddNewDialog({@required this.onSave});
 
   @override
   _AddNewDialogState createState() => _AddNewDialogState();
@@ -39,7 +39,7 @@ class _AddNewDialogState extends State<AddNewDialog> {
             widget.onSave(textInputController.text);
             Navigator.of(context).pop();
           },
-        )
+        ),
       ],
     );
   }
